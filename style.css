@@ -1,0 +1,15 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+body { background: linear-gradient(135deg, #1e3c72, #2a5298); color: #fff; min-height: 100vh; padding: 20px; }
+.container { max-width: 800px; margin: auto; }
+h1 { text-align: center; margin-bottom: 20px; }
+form { display: flex; gap: 10px; margin-bottom: 15px; }
+input { flex: 1; padding: 10px; border-radius: 8px; border: none; }
+button { padding: 10px 20px; border: none; border-radius: 8px; background: #ffb347; cursor: pointer; font-weight: bold; }
+.error { color: #ff8a8a; margin-bottom: 10px; }
+.card { background: rgba(255,255,255,0.15); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+.current-grid { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+.big { font-size: 3rem; display: block; }
+.stats p { margin: 5px 0; }
+.forecast-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px; margin-top: 10px; }
+.forecast-grid .card { text-align: center; padding: 15px; margin: 0; }
+.hidden { display: none; }

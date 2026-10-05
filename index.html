@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climate App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>🌤️ Climate App</h1>
+  <form id="searchForm">
+    <input id="cityInput" type="text" placeholder="Enter city name..." required>
+    <button type="submit">Search</button>
+  </form>
+  <p id="error" class="error"></p>
+
+  <section id="current" class="card hidden">
+    <h2 id="locationName"></h2>
+    <div class="current-grid">
+      <div><span class="big" id="temp"></span><span id="weatherDesc"></span></div>
+      <div class="stats">
+        <p>💧 Humidity: <span id="humidity"></span>%</p>
+        <p>🌬️ Wind: <span id="wind"></span> km/h</p>
+        <p>🌧️ Rainfall: <span id="rain"></span> mm</p>
+        <p>😷 Air Quality (AQI): <span id="aqi"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="forecast" class="hidden">
+    <h2>7-Day Forecast</h2>
+    <div id="forecastGrid" class="forecast-grid"></div>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
